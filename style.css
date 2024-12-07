@@ -1,0 +1,184 @@
+/* notes
+
+gray: #eeeeee
+black: #2E2E2E
+white: #fafafa
+accent: ?
+
+/*
+
+
+/* general stuff */
+html {
+    background: #fafafa;
+    font-family: "Rubik", sans-serif;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+/* 
+.left-floating, .right-floating, #image-container {
+border-width: 10px;
+border-style:solid;
+border-image: url("images/border.png") 8 fill round;
+} */
+
+p, li {
+    font-size: 0.9em;
+}
+
+body {
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-top: 3%;
+}
+
+p, h1, h2, h3, a[href], li {
+    color: #2E2E2E;
+}
+
+
+
+/* specific items/pages  */
+
+
+
+/* navigation bar stuff */
+.navigation {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fafafa;
+    font-weight: 500;
+    z-index: 99;
+    padding-top: 1rem;
+}
+
+#jessica-link {
+    text-decoration: none;
+    font-family: Rubik;
+} 
+
+.nav-links {
+    list-style-type: none;
+    display: flex; /* make links horizontal and no bullet */
+    font-size: 1.3em;
+}
+
+.nav-links li{
+    padding-left: 30px; /* adds space between each link */
+}
+
+.nav-links li a {
+    text-decoration: none; /* remove underline from links */
+}
+
+.nav-links li a:hover {
+    text-decoration: underline wavy;
+    text-underline-offset: 9px;
+    text-decoration-thickness: 2px;
+}
+
+#current {
+    text-decoration: underline wavy;
+    text-underline-offset: 9px;
+    text-decoration-thickness: 2px;
+    font-weight: bolder;
+    color: #ca97b0;
+}
+
+
+
+/* portfolio */
+#greeting-banner {
+    padding-top: 13%;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+    padding-left: 30%;
+    padding-right: 15%;
+    height: 80vh;
+    margin-bottom: 3%;
+}
+
+#greeting {
+    font-size: 80px;
+    justify-content: center;
+}
+
+#greeting-p {
+    font-size: 30px;
+    width: 40ch;
+    line-height: 3rem;
+}
+
+#greeting-p2 {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+#portfolio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.piece { /* would add this class to future pieces */
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 5rem;
+    margin-bottom: 3%;
+}
+
+.piece-title {
+    font-size: 1.75rem;
+}
+
+.piece-title a[href] {
+    text-decoration: none;
+}
+
+.piece-desc {
+    line-height: 1.7rem;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tag {
+    margin-right: 2.5ch;
+    padding: .5rem 1rem;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+a img.piece-img {
+    /* max-width: 70%;
+    height: auto; */
+    border-radius: 10px;
+}
+
+/* footer */
+footer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
