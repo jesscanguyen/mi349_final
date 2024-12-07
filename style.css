@@ -12,7 +12,7 @@ accent: ?
 html {
     background: #fafafa;
     font-family: "Rubik", sans-serif;
-    animation: fadeInAnimation ease 1s;
+    animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
 }
   
@@ -35,7 +35,7 @@ p, li {
     font-size: 0.9em;
 }
 
-body {
+.content {
     padding-left: 13%;
     padding-right: 13%;
     padding-top: 3%;
@@ -64,6 +64,9 @@ p, h1, h2, h3, a[href], li {
     font-weight: 500;
     z-index: 99;
     padding-top: 1rem;
+    padding-right: 13%;
+    padding-left: 13%;
+
 }
 
 #jessica-link {
@@ -96,12 +99,22 @@ p, h1, h2, h3, a[href], li {
     text-underline-offset: 9px;
     text-decoration-thickness: 2px;
     font-weight: bolder;
-    color: #ca97b0;
+    color: #E7D1D3;
 }
 
 
 
 /* portfolio */
+
+#banner-img {
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    width: 1000px;
+    height: auto;
+    top: -8%;
+}
+
 #greeting-banner {
     padding-top: 13%;
     /* display: flex;
@@ -111,6 +124,7 @@ p, h1, h2, h3, a[href], li {
     padding-right: 15%;
     height: 80vh;
     margin-bottom: 3%;
+    z-index:98;
 }
 
 #greeting {
@@ -129,6 +143,12 @@ p, h1, h2, h3, a[href], li {
     padding-top: 20px;
 }
 
+#banner-border {
+    position: relative;
+    top: 100px;
+    right: 100px;
+}
+
 #portfolio {
     display: flex;
     justify-content: center;
@@ -143,6 +163,8 @@ p, h1, h2, h3, a[href], li {
     align-items: center; 
     gap: 5rem;
     margin-bottom: 3%;
+    z-index: 98;
+
 }
 
 .piece-title {
@@ -166,7 +188,7 @@ p, h1, h2, h3, a[href], li {
 .tag {
     margin-right: 2.5ch;
     padding: .5rem 1rem;
-    background-color: #eeeeee;
+    background-color: #E7D1D3;
     border-radius: 5px;
 }
 
