@@ -113,10 +113,11 @@ p, h1, h2, h3, a[href], li {
     width: 1000px;
     height: auto;
     top: -8%;
+    margin-bottom: 5%;
 }
 
 #greeting-banner {
-    padding-top: 13%;
+    padding-top: 10%;
     /* display: flex;
     align-items: center;
     flex-direction: column; */
@@ -147,6 +148,7 @@ p, h1, h2, h3, a[href], li {
     position: relative;
     top: 100px;
     right: 100px;
+    margin: 5%;
 }
 
 #portfolio {
@@ -204,3 +206,51 @@ footer {
     padding-bottom: 5%;
 }
 
+/* responsive design */
+
+@media (max-width: 1200px) {
+
+    .piece {
+        flex-direction: column; /* Stack portfolio items */
+        gap: 1rem;
+    }
+
+    .piece-img {
+        max-width: 100%;
+    }
+
+    #banner-border {
+        display: none;
+    }
+
+    #banner-img {
+        display: none;
+    }
+
+    #greeting {
+    font-size: 50px;
+    }
+
+    #greeting-p {
+        width: auto;
+    }
+
+    #greeting-p2 {
+        max-width: auto;
+
+    }
+
+    #greeting-banner {
+        margin-bottom: 20rem;
+
+    }
+    
+}
+
+/* For screens 1200px and larger 
+@media (min-width: 1200px) {
+    .piece {
+        flex-direction: row; 
+        gap: 3rem;
+    }
+} 
