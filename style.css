@@ -1,6 +1,6 @@
 /* notes
 
-gray: #eeeeee
+gray pink: #F5E4E6
 black: #2E2E2E
 white: #fafafa
 accent: ?
@@ -24,15 +24,13 @@ html {
         opacity: 1;
      }
 }
-/* 
-.left-floating, .right-floating, #image-container {
-border-width: 10px;
-border-style:solid;
-border-image: url("images/border.png") 8 fill round;
-} */
 
 p, li {
     font-size: 0.9em;
+}
+
+li {
+    line-height: 2rem;
 }
 
 .content {
@@ -99,7 +97,7 @@ p, h1, h2, h3, a[href], li {
     text-underline-offset: 9px;
     text-decoration-thickness: 2px;
     font-weight: bolder;
-    color: #E7D1D3;
+    color: #F5E4E6;
 }
 
 
@@ -118,13 +116,10 @@ p, h1, h2, h3, a[href], li {
 
 #greeting-banner {
     padding-top: 10%;
-    /* display: flex;
-    align-items: center;
-    flex-direction: column; */
     padding-left: 30%;
     padding-right: 15%;
     height: 80vh;
-    margin-bottom: 3%;
+    margin-bottom: 5rem;
     z-index:98;
 }
 
@@ -156,15 +151,17 @@ p, h1, h2, h3, a[href], li {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 10rem;
 }
 
+
 .piece { /* would add this class to future pieces */
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center; 
     gap: 5rem;
-    margin-bottom: 3%;
+    margin-bottom: 10%;
     z-index: 98;
 
 }
@@ -190,7 +187,7 @@ p, h1, h2, h3, a[href], li {
 .tag {
     margin-right: 2.5ch;
     padding: .5rem 1rem;
-    background-color: #E7D1D3;
+    background-color: #F5E4E6;
     border-radius: 5px;
 }
 
@@ -200,13 +197,80 @@ a img.piece-img {
     border-radius: 10px;
 }
 
+/* about */
+#selfie {
+
+    border-radius: 10px;
+    float: left;
+    margin-right: 5em;
+    margin-bottom: 5em;
+}
+
+#about-layout {
+    display:flex;
+    flex-direction: row;
+}
+
+#about-text {
+    display:flex;
+    flex-direction: column;
+}
+
+
+/* handshake buddy page */
+#pre-project {
+    min-height: 100vh;
+}
+
+#project-hero {
+    border-radius: 10px;
+}
+
+#project-details {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 2rem 2rem 0;
+}
+
+.cube {
+    margin-right: 7rem;
+}
+
+#project-name {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+}
+
+.project-section {
+    height: auto;
+    padding: 2rem 2rem 2rem 0;
+}
+
+
 /* footer */
 footer {
     padding-top: 5%;
     padding-bottom: 5%;
 }
 
+
+
 /* responsive design */
+
+/* for portfolio */
+
+/* code assisted with chatgpt*/
+@media (max-height: 800px) {
+    #greeting-banner {
+        margin-bottom: 25rem;
+    }
+}
+
+@media (min-height: 801px) {
+    #greeting-banner {
+        margin-bottom: 10rem;
+    }
+}
 
 @media (max-width: 1200px) {
 
@@ -237,20 +301,26 @@ footer {
 
     #greeting-p2 {
         max-width: auto;
-
     }
 
     #greeting-banner {
         margin-bottom: 20rem;
-
     }
     
-}
 
-/* For screens 1200px and larger 
-@media (min-width: 1200px) {
-    .piece {
-        flex-direction: row; 
-        gap: 3rem;
+    /* about*/
+    #about-layout {
+        flex-direction: column; 
     }
-} 
+    #selfie {
+        width:60%;
+        height:auto;
+    }
+
+    /*specific piece page*/
+    #project-details {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
